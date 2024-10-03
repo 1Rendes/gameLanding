@@ -1,0 +1,20 @@
+.container {
+  width: calc(100% - 24px);
+  margin: 0 auto;
+  background-color: #83cff1;
+}
+.hero-container {
+  padding: 158px 80px 56px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desc {
+  width: 600px;
+}
