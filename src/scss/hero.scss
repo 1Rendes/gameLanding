@@ -4,10 +4,11 @@
   background-color: #83cff1;
 }
 .hero-container {
-  padding: 158px 80px 56px 80px;
+  padding: 158px 80px 176px 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 144px;
+  justify-content: center;
 }
 .image-block {
   display: flex;

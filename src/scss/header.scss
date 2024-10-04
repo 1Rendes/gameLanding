@@ -1,20 +1,21 @@
 .header {
   position: fixed;
   top: 130px;
-  width: 100%;
-  left: auto;
+  width: 1180px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 180px;
-  padding: 0 60px 0 72px;
-  margin: 0 auto;
+  gap: 80px;
+  padding: 15px 0;
+  background-color: RGBA(131, 207, 241, 0.9);
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  gap: 17px;
   @include media(desktop) {
     justify-content: flex-end;
   }
