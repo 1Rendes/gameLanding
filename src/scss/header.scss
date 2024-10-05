@@ -1,7 +1,7 @@
 .header {
   position: fixed;
-  top: 130px;
-  width: calc(100% - 10px);
+  top: 66px;
+  width: 310px;
   left: 50%;
   transform: translateX(-50%);
   justify-content: center;
@@ -9,9 +9,14 @@
   padding: 15px 0;
   background-color: RGBA(131, 207, 241, 0.9);
   display: flex;
+  transition: top 250ms ease-in-out;
   @include media(desktop) {
-    width: calc(100% - 24px);
+    width: 1160px;
+    top: 130px;
   }
+}
+.scrolled {
+  top: 0;
 }
 .menu-button {
   border: none;
@@ -21,6 +26,26 @@
   @include media(desktop) {
     display: none;
   }
+}
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 35px 40px;
+  gap: 16px;
+  align-items: center;
+}
+.mob-nav-link {
+  font-size: 12px;
+  line-height: 14px;
 }
 .header-menu-icon {
   fill: black;

@@ -1,46 +1,99 @@
 .benefits-container {
-  padding: 60px 167px 167px 167px;
+  padding: 60px 60px 40px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media(desktop) {
+    padding: 60px 150px 167px 150px;
+  }
 }
 .benefits-header {
-  margin-bottom: 64px;
-  font-weight: 400;
-  font-size: 64px;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
 }
 .benefits-desc {
-  margin-bottom: 64px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 14px;
   max-width: 1017px;
+  width: 250px;
+  text-align: center;
+  @include media(desktop) {
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 64px;
+  }
 }
 .benefits-points {
   background-color: #edd0ee;
   border-radius: 8px;
   display: flex;
-  gap: 120px;
-  padding: 24px 32px;
-  width: fit-content;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 12px;
+  width: auto;
   margin: 0 auto 32px;
+  @include media(desktop) {
+    padding: 24px 32px;
+    flex-wrap: nowrap;
+    gap: 120px;
+    width: fit-content;
+    justify-content: center;
+  }
 }
 .point {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
+  @include media(desktop) {
+    gap: 40px;
+  }
 }
 .point-desc {
-  font-size: 32px;
+  font-size: 12px;
+  line-height: 14px;
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 .cloud-icon {
   fill: #00a0ff;
+  width: 32px;
+  height: 32px;
+  @include media(dektop) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .star-icon {
   fill: #ffe000;
+  width: 32px;
+  height: 32px;
+  @include media(dektop) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .arrow-icon {
   fill: #c31162;
+  width: 32px;
+  height: 32px;
+  @include media(dektop) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .info-icon {
   fill: #32a071;
+  width: 32px;
+  height: 32px;
+  @include media(dektop) {
+    width: 40px;
+    height: 40px;
+  }
 }
