@@ -1,0 +1,50 @@
+.how-to-play {
+  padding: 70px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how-to-play-text {
+  font-family: 'Roboto';
+  font-size: 10px;
+  color: #000;
+  line-height: 1;
+  text-align: start;
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+.how-to-play-item {
+  width: 130px;
+  height: 297px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  @include media(desktop) {
+    width: 236px;
+    height: 522px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+}
+.how-to-play-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 278px;
+  @include media(desktop) {
+    width: 1021px;
+    gap: 25px;
+    margin: 56px;
+  }
+}
+
+.how-to-play-call {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}

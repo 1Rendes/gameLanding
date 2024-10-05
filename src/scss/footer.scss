@@ -1,0 +1,26 @@
+.footer {
+  background-color: #1ea5f4;
+  width: calc(100% - 10px);
+  margin: 32px auto 0;
+  padding: 21px 5px 40px;
+  font-size: 10px;
+  @include media(desktop) {
+    padding: 55px 90px 40px;
+    font-size: 18px;
+    width: calc(100% - 24px);
+  }
+}
+
+.footer-text {
+  text-align: center;
+}
+.footer-nav {
+  text-align: end;
+  margin-bottom: 30px;
+  @include media(desktop) {
+    margin-bottom: 69px;
+  }
+}
+.footer-ref:hover {
+  text-decoration: underline;
+}
