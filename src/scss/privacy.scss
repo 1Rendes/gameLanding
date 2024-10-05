@@ -1,4 +1,35 @@
 .privacy {
   background-color: #fff;
   text-align: center;
+  padding: 45px 25.5px 50px;
+  @include media(desktop) {
+    padding: 74px 62px 62px;
+  }
+}
+.privacy-policy {
+  font-family: 'Roboto';
+  text-align: justify;
+  font-size: 12px;
+  line-height: 1.83;
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}
+.privacy-icon {
+  fill: #000;
+}
+.privacy-back {
+  width: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 43px;
+  font-family: 'Lexend';
+  font-size: 13px;
+  line-height: 1.33;
+  color: #000;
+  @include media(desktop) {
+    font-size: 18px;
+  }
 }

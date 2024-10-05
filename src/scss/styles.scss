@@ -5,6 +5,7 @@
 @import './footer.scss';
 @import './privacy.scss';
 @import './about.scss';
+@import './faq.scss';
 
 @font-face {
   font-family: 'Inter Regular';
@@ -74,6 +75,19 @@ body {
   background-color: #f57ff6;
 }
 
+h1 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 21px;
+  @include media(desktop) {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
+
 h2 {
   font-family: 'Roboto Serif';
   font-weight: 400;
@@ -83,6 +97,7 @@ h2 {
   color: #000;
   margin-bottom: 30px;
   @include media(desktop) {
+    font-family: 'Roboto';
     font-size: 64px;
   }
 }
