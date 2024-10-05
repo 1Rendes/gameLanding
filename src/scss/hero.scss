@@ -1,7 +1,10 @@
 .container {
-  width: calc(100% - 24px);
+  width: calc(100% - 10px);
   margin: 0 auto;
   background-color: #83cff1;
+  @include media(desktop) {
+    width: calc(100% - 24px);
+  }
 }
 .hero-container {
   padding: 158px 80px 176px 80px;
@@ -17,5 +20,8 @@
   align-items: center;
 }
 .desc {
-  width: 600px;
+  width: auto;
+  @include media(desktop) {
+    width: 600px;
+  }
 }

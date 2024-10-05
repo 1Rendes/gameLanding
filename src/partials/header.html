@@ -1,6 +1,7 @@
 <header class="header">
-  <a href="/index.html">
-    <img src="./img/logo.png" alt="Logo" />
+  <a class="logo" href="/index.html">
+    <img class="logo-img" src="./img/logo.png" alt="Logo" />
+    <p class="logo-sign">Water Splash</p>
   </a>
   <nav class="nav-list">
     <a class="nav-link" href="">Home</a>
@@ -11,4 +12,28 @@
     <a class="nav-link" href="">Reviews</a>
     <a class="nav-link" href="">Gallery</a>
   </nav>
+  <button class="menu-button" type="button">
+    <svg class="header-menu-icon" width="24" height="24">
+      <use href="./img/icons.svg#icon-menu"></use>
+    </svg>
+  </button>
 </header>
+
+<div class="backdrop is-hidden">
+  <div class="mobile-menu hidden">
+    <button class="close-button" type="button">
+      <svg class="header-menu-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mob-nav-list">
+      <a class="mob-nav-link" href="">Home</a>
+      <a class="mob-nav-link" href="">Benefits</a>
+      <a class="mob-nav-link" href="">About this Game</a>
+      <a class="mob-nav-link" href="">How to play</a>
+      <a class="mob-nav-link" href="">FAQ</a>
+      <a class="mob-nav-link" href="">Reviews</a>
+      <a class="mob-nav-link" href="">Gallery</a>
+    </nav>
+  </div>
+</div>
