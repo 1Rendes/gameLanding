@@ -1,9 +1,54 @@
 @import './header.scss';
 @import './hero.scss';
 @import './benefits.scss';
+@import './how-to-play.scss';
+@import './footer.scss';
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../font/Inter_28pt-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('../font/Inter_28pt-SemiBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('../font/Lexend-Medium.ttf');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../font/Roboto-Medium.ttf');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  src: url('../font/RobotoSerif_28pt-Medium.ttf');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -21,4 +66,18 @@
 body {
   padding: 45px 0;
   background-color: #f57ff6;
+}
+
+h2 {
+  font-family: 'Roboto Serif';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.87;
+  text-align: center;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+a {
+  cursor: pointer;
 }
