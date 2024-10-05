@@ -4,6 +4,7 @@
 @import './how-to-play.scss';
 @import './footer.scss';
 @import './privacy.scss';
+@import './about.scss';
 
 @font-face {
   font-family: 'Inter Regular';
@@ -64,6 +65,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 45px 0;
   background-color: #f57ff6;
@@ -77,6 +82,9 @@ h2 {
   text-align: center;
   color: #000;
   margin-bottom: 30px;
+  @include media(desktop) {
+    font-size: 64px;
+  }
 }
 
 a {

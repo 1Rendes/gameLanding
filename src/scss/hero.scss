@@ -1,21 +1,43 @@
 .container {
-  width: calc(100% - 24px);
+  width: 310px;
   margin: 0 auto;
   background-color: #83cff1;
+  @include media(desktop) {
+    width: 1160px;
+  }
 }
 .hero-container {
-  padding: 158px 80px 176px 80px;
+  padding: 84px 47px 40px;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  gap: 144px;
+  gap: 25px;
   justify-content: center;
+  @include media(desktop) {
+    gap: 144px;
+    padding: 158px 80px 176px 80px;
+    flex-direction: row;
+  }
 }
 .image-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  @include media(desktop) {
+    gap: none;
+  }
 }
 .desc {
-  width: 600px;
+  width: auto;
+  text-align: center;
+  font-size: 10px;
+  line-height: 14px;
+  @include media(desktop) {
+    font-size: 18px;
+    width: 600px;
+    text-align: left;
+    line-height: 30px;
+  }
 }

@@ -1,23 +1,83 @@
 .header {
   position: fixed;
-  top: 130px;
-  width: 1180px;
+  top: 66px;
+  width: 310px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 170px;
   padding: 15px 0;
   background-color: RGBA(131, 207, 241, 0.9);
-}
-
-.nav-list {
   display: flex;
+  transition: top 250ms ease-in-out;
+  @include media(desktop) {
+    width: 1160px;
+    top: 130px;
+  }
+}
+.scrolled {
+  top: 0;
+}
+.menu-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  @include media(desktop) {
+    display: none;
+  }
+}
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 35px 40px;
+  gap: 16px;
+  align-items: center;
+}
+.mob-nav-link {
+  font-size: 12px;
+  line-height: 14px;
+}
+.header-menu-icon {
+  fill: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-sign {
+  display: flex;
+  width: 50px;
+  font-size: 10px;
+  line-height: normal;
+  @include media(desktop) {
+    display: none;
+    font-size: 14px;
+  }
+}
+.logo-img {
+  width: 28px;
+  @include media(desktop) {
+    width: auto;
+  }
+}
+.nav-list {
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 17px;
   @include media(desktop) {
-    justify-content: flex-end;
+    display: flex;
   }
 }
 
@@ -37,4 +97,38 @@
 .nav-link:hover,
 .nav-link:focus {
   border: 1px solid white;
+}
+
+.mobile-menu {
+  background-color: RGB(131, 207, 241);
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 320px;
+  transition: opacity 500ms ease-in-out, transform 250ms ease-in-out;
+  transform: translate(0, 0);
+  border-radius: 16px;
+}
+.hidden {
+  transform: translate(100%, 0);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 250ms ease-in-out;
+  pointer-events: auto;
+}
+.backdrop.is-hidden {
+  background-color: transparent;
+  pointer-events: none;
 }
