@@ -7,71 +7,100 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/gameLanding/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/gameLanding/assets/styles-d36f5a5b.css">
+    <link rel="stylesheet" href="/gameLanding/assets/styles-e8ee92f9.css">
   </head>
   <body>
     <header class="header">
-  <a href="/index.html">
-    <img src="/gameLanding/assets/logo-50094026.png" alt="Logo" />
+  <a class="logo" href="/index.html">
+    <img class="logo-img" src="/gameLanding/assets/logo-50094026.png" alt="Logo" />
+    <p class="logo-sign">Water Splash</p>
   </a>
   <nav class="nav-list">
-    <a class="nav-link" href="">Home</a>
-    <a class="nav-link" href="">Benefits</a>
-    <a class="nav-link" href="">About this Game</a>
+    <a class="nav-link" href="#hero">Home</a>
+    <a class="nav-link" href="#benefits">Benefits</a>
+    <a class="nav-link" href="#about">About this Game</a>
     <a class="nav-link" href="">How to play</a>
     <a class="nav-link" href="">FAQ</a>
     <a class="nav-link" href="">Reviews</a>
     <a class="nav-link" href="">Gallery</a>
   </nav>
+  <button class="menu-button" type="button">
+    <svg class="header-menu-icon" width="24" height="24">
+      <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-menu"></use>
+    </svg>
+  </button>
 </header>
 
-    <div class="container hero-container">
-  <a
-    class="google-butt"
-    href="https://play.google.com/store/apps/details?id=com.cookapps.watersplash"
-  >
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAA0CAYAAAAjfRLqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA67SURBVHgB7V1dbBzVFT7XoSTEhawraERpyaYPlcKP4hCpagsiCT8qrVrFEQilsUScF2JVLUlQaRsJNc5TKTzEfgABamOb1iEUoRCVh9IgbxIIFMifk0ArFOJ1kkLzI2wnsfODs7fnuzNnfXc8s/bOrp1d937Kyez835n59sw53z13rSgEHR0dtZlMJkEODmWKqqqqvvr6+v3B5Uo+tLa2JqZNm7aKibz69OnTiVOnTpGDQ7li1qxZVF1dndZar2dit8lyQ2gmc3Lq1Kmp3bt3J1977TXq6ekhB4dyx5w5c6ixsZFmzpzZvHTp0jXZFZs2bep+8MEHNX905qyibPr06frJJ5/Umzdv3sDzpDhebjh69Gjr2rVrycGhEsGkppaWFuKQeVGVUmoVwgwHh0rF4OAg7dy5k6ZMmVJXxfO1LmZ2qHSAw+yck1Xk4DBJwIrHDEdoh0mFqyguZkwluv3rRO8co3JHQ0MDLViwgBKJBHV1dVFbWxul02mzbuHChcZsvP7661RbW0vJZDJneV9fHzU3N2fnsb6urs4sa2pqGnFenAPnsoE2oD1z5841n7du3Urbt28f0R4cE+cD0BZZ5pAf8Tz0D+tIHXmK6I2fER1YSbTsNipHgDCpVIo2bNhA/f39tGPHDkOkffv2mXUAiLJ8+XIj1IthHQyfFy9enLPeBgi9atUq81nWYx77RG2Pc2MbxHxoDz6jjfLlQXvWrVtnTABCy3kcRgFr0PqGG24oTP/74xZNxwc1fdGsVd+vNcEOrNRM7LLRJ2HcYaS7u7s1kzNnORMk+5k9q2ZCRR4j33omnzm+vQzbYp+o9mB9sD3seTUTPXs+fO7t7TXHxzL26CPO4yzX7r77bs1cTsULOa5LkNLXEA08Snra34i+sofUzTNIP/sjz1uv7SQ6eJKuNBAOrFixIvvqFuzfn1sCAG9shx0IAUoNCTUWLVo0oj0IV5jAxhMDWL9+/Xr04NK8efPIYeyIFXKgv5wzSjYm9eDDRF/ON18T1k2I7rqZ6O0GIpD75uvoSgIkssnDXs5vt2dCILzuQR6x8WqLtCEIaaNsAyBeRlxthx4OoyMWoUFeJc4e/4HUF+/K3aj+do6vG4me+/EVIzYIIaQF4B1nz55tpjbgsbFcbLzaAuKGeVyJnyUxFODtsnr1apPQOowN8ZJCjX9+oZ5WZl4N/oTo/H0jNlVC7N/eOeHERncoPJyQWkiFJA+fg6HHRLQHCaqtnuAzkkJbeRFgHqEHQieHsSG+bOfD0BqvcP6kLt7vEf2abdn1eLUbgNCIr5/axZnoIZoI4LWN1ziUBYmLQW4QxfbSiJ/tUGDNmjVGuis1ECujPTgX2oPPIDS+WDhn1D5QTexwxCEaCioHJKGC6p9fSRF9byGHHR6Ryeesia0zPGVC6+lveQtBaKWG98X8sTMTSmyQBkQGKUBmO+nDuqDeDIJJXIt12C/Mm9uEFOA82DfobYPtkSQ0rD3B8+Vrg4MHVjlQSro9HqE3e4QGlM7ymYjJbGYwrWZCV2/L2U3R8Lbm89H+CSW2w+SFEDp217fyAulsgqiEzGJn7yV15qc5+5htaZjYkPoUJ43qjaVXXBFxmBwoopZDkkKfw0LkjL8ayeI5Vj56H/a2tsMOC2Y3SH2+IjLrRnJwiI3YKgcY7Hlm/u8yZcmMuNosy2iP5APzSZ1+hPTlqX7ySCamBsFNwqg9vaQmc5FSdx6i9FaiVpZek47YDjEQX+XwPbLWw55aGYIqEmEjG34M3MoKyErSN77AG13gxDHjkRrb8DRx+QJ1pl+h2ksnzFesgSOVhjpFTS9qamOC93xGJQOSMei6kgxKAidFQpUCSWTR/mDPY6GQ2pUwRB3f3idfAjzhiFXLsSml6VOm8mGm7ie+/ZvtX2wfsWv+iKcH2Q7wNvt5fl9Gqz08PfgfrU4/5dV++JY82aj3fThTZ97h78F7bO+z7WbO7+VpF+nuN0k31FFh7Qsx1EWgjiIfUC+BuolizzURJoiqGynEcM35gNqS4H1h3Tx7zyb62sNMajnidX3jEOxktUkE/RDD99CyTk5lPHhGedPz3yDd8yjRpRoTciQv9lPqk5ep9vwJ78DmMBJrK/MveRPRxt8r6u5kSWwOxQI6V9B5IVIZPA46MtBpganIYdIF7joycgEpcjzLAkqJ4jpWDGm9ECNLcglBDMmVJ+tlvFjbrBuq4XfUSo6Rn+YwYzMlh/pNmGFiauWrJ4R5TD09BP+D2J0dir52h6ZCADJLrTJejehODgst8NC2bNliQo/x6FSpFOBLbQ/Jw33BPcSXHMVVqCcv57rseLUc4oV9z0w+abUhsPbX+SS+LOtV1pMnP79Enb/5hJInLnnHo+EE0YOyTuRtgUX9Z6kg4OHYZEbvYFScLPUcqJ1wGAbuy5IlS7L3rdzrsotQOcAxNaxqeJGdH2L4HS4Z5ZHeIvXs0/+l1Iu/omSaews33sGy3jWmI9Ho09lOR5319B6nFaWPEy1pLNw7C0DmskpeKgwYjAAEe1XLDfFCDisc135xkrGM/zkjZPY6XLRP8LnHD1Mnk7nmwoB3mN5ppP40n+iRLqKbPPc7HEF75O0/R9TyF03NL3HsW4CHlvpjIKzwJw7wMFHYJN3oiMURogSHWdmAx8coGSECPB6KlKLagzgftRtSUNXe3m6841ivJbi/FDgVe/0y+mY0RUVGAEkJQPAeIXSRtoUNW8N9kmvFdResPMVSOdpTnpJxiOl8kBWMA+yGoWbs5WV72D5ke5/tPV72Lk/f0bp282Hde89irX9wn858/16d4an2LXPvQq1fvdZTOT7wVI7enaSbGkknro2X9ULVEPBNDN0GI0f4BkaaPbKEX7VmFEmUOoLt7WNjHsujwG+PEe3BsqjjC2QUS5jKEbV/1PkoROVg4o5YjxE+Aoy6wbIwlQProsD5ibmf9rnkWmyzjxG8pzQGlSOWh1Z+eOElhCrb7W2WX/Y7VIy3VibcqPtoF2386zM04/y5bKdKDs5zM55nT/3zPUTfPEstL/O398XCPHIQ9qsxyqvAW+TL3OEdEKrAY0giBE8HD4tjijeSElDUOmO5zEsbsD08M7w6YlCJ7THOUY5rJ684LzwzIOcYDWij7C9vAbQF14j9sQ5hw2geD1V/9v3C20VUHxlJEwZ7sHFY+3EMJJRoB0pocS9wzcHCrKLfqnE8tGplD81eWXXBtOeZdzO1fc+sLM/csOHNYU8Mz8ymbe9seevUbfN1MnFVQW2JMnhlQZS2PJr+KmMJxUNGjU8UYGwgBbxM0Athf+i6ADy+vCVsTxZsJ44bPJ5APLS0UcYmkvWmkjdLcN1Y74Ncuz0WM0qHlvbhuuReybZoB+bRZoF9TLsdhXhnoiJ1aCPT+VNRMYyi4asbkhg2fPgP2vjqMzn7infW1vyO/l5adGiPsXTfEJUCwZLOMECes0eqiNn7wsOIpw16LzmPyHyIXe3zhfU+Yn+pfZaxjLbuHVYXHRZr2rB/cgH7i/fDOEW8Kex4fzTgWuAdxeDpoXIE70sYcB7cA5xXDLXf8PKyHrB/okE8MiBJPNoZN+aPHXJ4RFbZThQJPYTU67a9RE1v/Tl3P6WGicy2/UwvrT96xExLDakzllceSBEkY1i3rtROA3hF26ELBgqEAa9SkFK2lf2jCGA/rGC3c9iDlO75KIXB3h+vc/sLjHuAMGGsyRWS2Dg/DRcMs+Q6pGbcBq5HRhPJs7EdRzE6dzwPbUissnqzmDZFSSPJrLN6spmhnovnacXhj41HHg8yCyTew00day+XHa/CQ9mEjxpvGFQA5GEGf5dDYBMw+KWKqqnIJ5fZ+8uIHFx7TU1NXu29lAA5pY0ydhOGNkg8bUO8NK4XXyLRt+EEimlvbB1aZayBsllSq0jPDPQNfUnrj3XTvK73qe1kCSuOImAnJ/Cg6AnM5+Xg3eT1LkkJjiGECRuBLb+eBEjoIa9222vbsDsn8ABtTx52jtE6M+wRNtJBZL+R7GRrvGDLkkFChg3yFS8N4PokoZRlsRFLtnshpdUH7I7/yfYeu9xdPH2bE5TfteckfGJffHeBbvrWt3XiqtIkfIWaJCUCJG3sFUwSAmMi50hySJ7s5A/b2kkbEh8kLVguyRj2l0QGUzmeFDwh+QkWSNmSG45rt0/OEZTiopLCqDbKj9QAUT+YM5psl++eSlJoJ65oS9j1aq1HJMg2iil0kqQwnsrxPBOayazeZSLv0obMzU88O0ziO+/PqhkbZn/nihHZNjz4KB3ZBh5MUMkIPrAgcNygkoIHmk+HBiGCD1fUj7DjC/Lp0LZ6EHYMW1EoNaHz6e72dUUdByim0rE4Qj+X8j0zp4JvZ3TbL5/OITJkuNStd+jk1GlFkbDUJh4LXsP2rLjhIGyY0G8bpEB4P9v7Yr8oiQnL8cBsmQ7nznceaR+2heF8tqwn+8KLw4KdRlhfSBtlHzle2Jc5qp3YHm+3sOuVa4W3to8fPI5InMWWoRZFaHo2Zchcs+2sbv3FH3I0ZWjJC2fUFNW4/1eztVvbbK17tC9dJZn9RS22rrsoHZrO9FHN4AB1vvAENezdZlSM/QNn6Z6P93rKRf/4KReTEZKQQrPNlxQGf/Kg0hFUlEqBeMVJr7RQ556/U+1nn1KaJbimY0eo/eTn5BAPyPihBImEhalUt+GhiwIQJn9VKkrSzR2GWCEHXhccH9dO/+qEvqImu+VLPINJZKVbMd3cYVbcz+ky0hcvkENpAe8MLRueSzpl4LmkhHQyQUYPjfYrU4Wi6N+2cygtYtUAVyDG6xrdHw1ymFQAobdH1Rw4OFQKbrnlFky6qjgm3/HAAw+Qg0Ol4vrrrzd/yJ6VIq9Mj7PDfe6P1zurRMMfr3/88cehcBgyT8F/Dz300JvM8DqW7xLIOPG3kx0cyh3wyo899hjCjfZly5Y1Yll2cB/3qSeuvvrq1ey2l/f09CQHBgbIwaFcgbyvurp6P4fMLfX19W2yPPQ3bjs6OmozmUyCHBzKFENDQ2nWsdPB5f8DX/R9J3S7U0oAAAAASUVORK5CYII=" alt="Download" />
-  </a>
-  <div class="image-block">
-    <img
-      src="/gameLanding/assets/Galaxy Tab S8 Ultra-e20e0af2.png"
-      alt="Game picture 'Water Splash'"
-    />
-    <p class="desc">
-      TOPJOYSAGA.COM IS A PLATFORM FOR ENTERTAINMENT. THE PROBABILITY OF WINNING
-      IN THIS GAME DOES NOT TRANSLATE TO REAL-WORLD SUCCESS. ENJOY RESPONSIBLY.
-    </p>
+<div class="backdrop is-hidden">
+  <div class="mobile-menu hidden">
+    <button class="close-button" type="button">
+      <svg class="header-menu-icon" width="10" height="10">
+        <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mob-menu-list">
+      <a class="mob-nav-link" href="#hero">Home</a>
+      <a class="mob-nav-link" href="#benefits">Benefits</a>
+      <a class="mob-nav-link" href="#about">About this Game</a>
+      <a class="mob-nav-link" href="">How to play</a>
+      <a class="mob-nav-link" href="">FAQ</a>
+      <a class="mob-nav-link" href="">Reviews</a>
+      <a class="mob-nav-link" href="">Gallery</a>
+    </nav>
   </div>
 </div>
 
-    <section>
+    <section id="hero">
+  <div class="container hero-container">
+    <a
+      class="google-butt"
+      href="https://play.google.com/store/apps/details?id=com.cookapps.watersplash"
+    >
+      <img src="data:image/png;base64,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" alt="Download" />
+    </a>
+    <div class="image-block">
+      <picture>
+        <source srcset="/gameLanding/assets/hero-mob-8095f2c4.png " media="(max-width: 1199px)" />
+        <source srcset="/gameLanding/assets/hero-desktop-e20e0af2.png " media="(min-width: 1200px)" />
+        <img src="/gameLanding/assets/hero-mob-8095f2c4.png" alt="Game picture 'Water Splash'" />
+      </picture>
+      <p class="desc">
+        TOPJOYSAGA.COM IS A PLATFORM FOR ENTERTAINMENT. THE PROBABILITY OF
+        WINNING IN THIS GAME DOES NOT TRANSLATE TO REAL-WORLD SUCCESS. ENJOY
+        RESPONSIBLY.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="benefits">
   <div class="container benefits-container">
-    <h1 class="benefits-header">Benefits</h1>
+    <h2 class="benefits-header">Benefits</h2>
     <p class="benefits-desc">
       "Dive into fun-filled puzzles and make a splash in Water Splash!"
     </p>
     <div class="benefits-points">
       <div class="point">
-        <svg class="header-menu-icon" width="40" height="40">
-          <use href="/gameLanding/assets/icons-4dabd4ce.svg#icon-cloud"></use>
+        <svg class="cloud-icon">
+          <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-cloud"></use>
         </svg>
         <p class="point-desc">Online/Offline</p>
       </div>
       <div class="point">
-        <svg class="header-menu-icon" width="40" height="40">
-          <use href="/gameLanding/assets/icons-4dabd4ce.svg#icon-star"></use>
+        <svg class="star-icon">
+          <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-star"></use>
         </svg>
         <p class="point-desc">4.7</p>
       </div>
       <div class="point">
-        <svg class="header-menu-icon" width="40" height="40">
-          <use href="/gameLanding/assets/icons-4dabd4ce.svg#icon-arrow"></use>
+        <svg class="arrow-icon">
+          <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-arrow"></use>
         </svg>
         <p class="point-desc">10000 +</p>
       </div>
       <div class="point">
-        <svg class="header-menu-icon" width="40" height="40">
-          <use href="/gameLanding/assets/icons-4dabd4ce.svg#icon-info"></use>
+        <svg class="info-icon">
+          <use href="/gameLanding/assets/icons-8fdbded2.svg#icon-info"></use>
         </svg>
         <p class="point-desc">3.00+</p>
       </div>
@@ -82,9 +111,9 @@
   </div>
 </section>
 
-    <section>
-  <div class="container benefits-container">
-    <h1 class="benefits-header">About This Game</h1>
+    <section id="about">
+  <div class="container about-container">
+    <h2 class="benefits-header">About This Game</h2>
     <p class="benefits-desc">
       Water Splash is a fun and challenging match-3 puzzle game where players
       match water-themed items like balloons, fish, and more to clear levels and
@@ -93,7 +122,7 @@
       water landscapes, use powerful boosters, and beat the toughest puzzles as
       you advance through each level.
     </p>
-    <img src="/gameLanding/assets/about-70102eab.png" alt="Game interface example" />
+    <img class="about-img" src="/gameLanding/assets/about-70102eab.png" alt="Game interface example" />
   </div>
 </section>
 
