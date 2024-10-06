@@ -16,7 +16,7 @@
 }
 .how-to-play-item {
   width: 130px;
-  height: 297px;
+  height: 249px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@
 .how-to-play-list {
   display: flex;
   gap: 15px;
+  row-gap: 25px;
   flex-wrap: wrap;
   width: 278px;
   @include media(desktop) {
