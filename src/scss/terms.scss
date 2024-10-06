@@ -1,5 +1,10 @@
 .terms-paragraph {
   text-align: justify;
+  font-size: 12px;
+  line-height: 22px;
+  @include media(desktop) {
+    font-size: 16px;
+  }
 }
 .terms {
   background-color: white;
