@@ -2,6 +2,9 @@
   background: #83cff1;
   opacity: 0.8;
   padding: 60px 0;
+  @include media(desktop) {
+    opacity: 1;
+  }
 }
 .reviews-item-wrapper {
   border: 1px solid #d9d9d9;
