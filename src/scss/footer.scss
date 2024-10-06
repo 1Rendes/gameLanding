@@ -1,13 +1,13 @@
 .footer {
   background-color: #1ea5f4;
-  width: calc(100% - 10px);
+  width: 310px;
   margin: 32px auto 0;
   padding: 21px 5px 40px;
   font-size: 10px;
   @include media(desktop) {
     padding: 55px 90px 40px;
     font-size: 18px;
-    width: calc(100% - 24px);
+    width: 1160px;
   }
 }
 
