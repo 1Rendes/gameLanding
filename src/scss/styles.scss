@@ -8,6 +8,7 @@
 @import './terms.scss';
 @import './faq.scss';
 @import './reviews.scss';
+@import './gallery.scss';
 
 @font-face {
   font-family: 'Inter Regular';
@@ -100,10 +101,12 @@ h2 {
   line-height: 0.87;
   text-align: center;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   @include media(desktop) {
     font-family: 'Roboto';
     font-size: 64px;
+    margin-bottom: 30px;
+    height: 75px;
   }
 }
 
