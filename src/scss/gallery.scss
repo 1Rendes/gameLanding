@@ -1,0 +1,31 @@
+.gallery {
+  padding: 60px 0 92px;
+}
+.gallery-list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 207px;
+  margin-bottom: 19px;
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    gap: 24px;
+    width: 1019px;
+    margin-bottom: 81px;
+  }
+}
+.gallery-item {
+  width: 323px;
+}
+.gallery-text {
+  text-align: center;
+  color: #000;
+  width: 288px;
+  font-size: 12px;
+  margin: 0 auto;
+  @include media(desktop) {
+    font-size: 18px;
+    width: 1019px;
+  }
+}
