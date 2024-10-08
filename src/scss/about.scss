@@ -1,6 +1,8 @@
 .about-img {
   width: 265px;
+  margin-top: 17px;
   @include media(desktop) {
+    margin-top: 50px;
     width: auto;
   }
 }
