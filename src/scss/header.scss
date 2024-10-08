@@ -104,11 +104,12 @@
   z-index: 1;
   opacity: 1;
   pointer-events: auto;
-  top: 0;
+  top: 66px;
   left: calc(50% - 45px);
   width: 200px;
   height: 320px;
-  transition: opacity 500ms ease-in-out, transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out,
+    top 250ms ease-in-out;
   transform: translate(0, 0);
   border-radius: 16px;
 }
@@ -116,6 +117,9 @@
   transform: translate(100%, 0);
   opacity: 0;
   pointer-events: none;
+}
+.mob-scrolled {
+  top: 0px;
 }
 .backdrop {
   position: fixed;
