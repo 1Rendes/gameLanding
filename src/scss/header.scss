@@ -105,7 +105,7 @@
   opacity: 1;
   pointer-events: auto;
   top: 0;
-  right: 0;
+  left: calc(50% - 45px);
   width: 200px;
   height: 320px;
   transition: opacity 500ms ease-in-out, transform 250ms ease-in-out;
