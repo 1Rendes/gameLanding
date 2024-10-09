@@ -15,3 +15,15 @@
     padding: 60px 150px 167px 150px;
   }
 }
+.about-desc {
+  font-size: 12px;
+  line-height: 16px;
+  width: 245px;
+  text-align: center;
+  @include media(desktop) {
+    width: 1017px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
